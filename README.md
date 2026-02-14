@@ -1,40 +1,38 @@
-# Calculator using JavaScript, CSS & HTML
+# Calculator Web Application
 
-A simple, clean, and interactive **calculator web app** built with **HTML**, **CSS**, and **JavaScript**.
+A lightweight and responsive calculator built using **HTML, CSS, and JavaScript**.  
+This project demonstrates core front-end development concepts including DOM manipulation, event handling, and dynamic UI updates using vanilla JavaScript.
 
-## 🚀 Live Demo
+## 🔗 Live Demo
 
-Check out the working calculator here:  
 https://aditya-agni.github.io/Calculator-using-Javascript-CSS-HTML/
 
-## 🧠 Features
+## 📌 Overview
 
-✔️ Addition, Subtraction, Multiplication, and Division  
-✔️ Real-time input display  
-✔️ Clear (C) button to reset  
-✔️ Backspace (⌫) to delete last digit  
-✔️ Responsive UI  
-✔️ Works on all modern browsers
+The application performs basic arithmetic operations through a clean and intuitive interface.  
+It is built without external libraries to focus on fundamental logic implementation and structured code organization.
 
-## 🛠 Tech Stack
+## ✨ Features
 
-- **HTML** – Markup for structure  
-- **CSS** – Styling and layout  
-- **JavaScript** – Logic and user interactions
+- Addition, Subtraction, Multiplication, and Division
+- Real-time display updates
+- Clear and Backspace functionality
+- Basic error handling for invalid expressions
+- Responsive design for different screen sizes
 
-## 🎯 Usage
+## 🛠️ Tech Stack
 
-1. Open the webpage in a browser.
-2. Click buttons to enter numbers and operators.
-3. Click `=` to see the result.
-4. Use `C` to clear the input or `⌫` to delete the last value.
+- **HTML5** – Structure  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6)** – Logic and interactivity  
 
-## 🧩 How It Works
+## 🧠 Implementation Details
 
-- Buttons trigger JavaScript functions via event listeners.
-- Each click updates the display.
-- When `=` is pressed, the expression is evaluated and shown on the screen.
-- Error handling avoids invalid operations.
+- Event listeners handle all button interactions.
+- User input is dynamically rendered on the display.
+- Expressions are evaluated when the equals (`=`) button is pressed.
+- Input validation ensures stable and predictable behavior.
 
-## 📂 Project Structure
+## 📄 License
 
+This project is open-source and available for educational and personal use.
