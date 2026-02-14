@@ -1,1 +1,91 @@
-/* Add styles here */
+body{
+    margin:0;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(90deg,rgba(130, 0, 217, 1) 0%, rgba(247, 0, 223, 1) 50%, rgba(15, 24, 125, 1) 100%);
+    display: flex;           
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;     
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+.calculator{
+    width:clamp(250px,40vw,400px);
+    height: clamp(300px,60vh,600px);
+    background-color:black;
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "display display display display"
+                         "clear clear backspace backspace"
+                         "seven eight nine divide"
+                         "four five six multiply"
+                         "one two three subtract"
+                         "zero decimal equals add";
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 4px solid rgb(255, 242, 242);
+    border-radius: 15px;
+}
+
+.calculator button:hover{
+    background-color: rgb(55, 55, 55);
+}
+
+.display{
+    height:60px;
+    width : 100%;
+    border:4px solid rgb(164, 164, 164);
+    background-color: white;
+    font-size: 3rem;
+    text-align: right;
+    white-space: nowrap;;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.item{
+    color:white;
+    border: 3px solid rgb(212, 212, 212);
+    background-color: rgb(125, 125, 125);
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Connect the HTML classes to the Grid Areas */
+.clear    { grid-area: clear; }
+.backspace{ grid-area: backspace; }
+.display  { grid-area: display; }
+.seven    { grid-area: seven; }
+.eight    { grid-area: eight; }
+.nine     { grid-area: nine; }
+.divide   { grid-area: divide; }
+.four     { grid-area: four; }
+.five     { grid-area: five; }
+.six      { grid-area: six; }
+.multiply { grid-area: multiply; }
+.one      { grid-area: one; }
+.two      { grid-area: two; }
+.three    { grid-area: three; }
+.subtract { grid-area: subtract; }
+.zero     { grid-area: zero; }
+.decimal  { grid-area: decimal; }
+.equals   { grid-area: equals; }
+.add      { grid-area: add; }
+
+.clear,.backspace,.add,.subtract,.multiply,.divide{
+    background-color: orange;
+}
